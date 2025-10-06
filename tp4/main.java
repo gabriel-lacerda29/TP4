@@ -273,7 +273,7 @@ public class main {
     public static void main(String[] args) throws FileNotFoundException{
         //cria o scanner para o arquivo
         Scanner scanner = new Scanner(System.in);
-        File arq = new File("games.csv");
+        File arq = new File("/tmp/games.csv");
         Scanner scannerArq = new Scanner(arq);
 
         game dados[] = new game[2000];
@@ -344,4 +344,5 @@ public class main {
         scanner.close();
         scannerArq.close();
     }
+
 }
